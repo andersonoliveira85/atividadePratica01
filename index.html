@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="browrser.css" />
+    <title>Atividade Prática 01 - Anderson Araujo</title>
+</head>
+
+<body>
+
+    <div class="browser">
+        <!-- Barra de Ferramentas -->
+        <div class="row">
+            <div class="column left">
+                <span class="fechar" id="fechar" style="background:#ED594A;"></span>
+                <span class="novo" style="background: green;" ></span>
+            </div>
+            <div class="column middle" id="url" style="width: 70%;">
+                <input type="text" id="url_text" value="https://">
+                <input type="button" class="ir">
+            </div>
+            <div class="column right" id="barras">
+                <div style="float:right">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Viewport do navegador -->
+        <div class="container-frameTab">
+            <iframe name="frameTab" id = "frameTab" class="responsive-iframe" src="./www.thereal.com/index.html"></iframe>
+        </div>
+    </div>
+<script src="browser.js"></script>
+</body>
+
+</html>
